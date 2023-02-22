@@ -2,14 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: glass_2
   m_Shader: {fileID: 20, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -27,9 +28,11 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - <noninit>: 0
     m_Colors:
     - <noninit>: {r: 3.195358e-39, g: 3.5494628e-32, b: 7.4958777e-34, a: 6.976935e-33}
     - _Color: {r: 0.1397059, g: 0.1397059, b: 0.1397059, a: 1}
     - _ReflectColor: {r: 0.18382353, g: 0.18247189, b: 0.18247189, a: 0.5}
+  m_BuildTextureStacks: []

@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water4Advanced
+  m_Shader: {fileID: 2, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 768fae83cb7046d4ba01347da1d045f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c4cc78995d95be242b9e3532c9c3d72b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 1, y: 1}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShoreTex:
+        m_Texture: {fileID: 2800000, guid: 8d6415a4166a43d4697c9ee7bb7c1fde, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 1, y: 1}
+    m_Ints: []
+    m_Floats:
+    - _Ambient: 1
+    - _Displacement: 0.2786338
+    - _DisplacementTiling: 18.58681
+    - _FadeExp: 0.9150327
+    - _FoamWaveDependency: 0.1020548
+    - _FresnelPower: 1.793103
+    - _FresnelScale: 0.6571428
+    - _GerstnerIntensity: 1.671429
+    - _HeightDisplacement: 3.272251
+    - _InvFade: 0.628783
+    - _InvFadeDepthFade: 0.07197756
+    - _InvFadeFoam: 0.1217
+    - _NormalsDisplacement: 0
+    - _ReflDistort: 0.9267696
+    - _RefrDistort: 1.439329
+    - _Shininess: 313.2184
+    - _ShoreTiling: 56.86274
+    - _Speed: 0.4137931
+    - _WaterDepth: 40.98077
+    - _WaveCapsAmount: 0.1827586
+    - _WaveFoamDistort: 0.2793103
+    - _WaveScale: 0.04628966
+    m_Colors:
+    - WaveSpeed: {r: 1.086165, g: 4.440575, b: 12.10515, a: -3.020645}
+    - _AnimationDirection: {r: 2, g: 4, b: 2, a: -1}
+    - _AnimationTiling: {r: 0.04582553, g: 0.0182, b: 0.04571447, a: 0.02712969}
+    - _BaseColor: {r: 0.1537091, g: 0.2681302, b: 0.2985075, a: 0.82}
+    - _BumpDirection: {r: 40, g: 40, b: 40, a: -40}
+    - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _BumpTiling: {r: 0.12, g: 0.07, b: 0.08, a: 0.06}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DepthColor: {r: 0.0275117, g: 0.141791, b: 0.1322678, a: 0.4627451}
+    - _DepthColorFade: {r: 0.8880597, g: 0.278347, b: 0.4446324, a: 0.2235294}
+    - _Displacement: {r: 6.637167, g: 20.35398, b: -1, a: -0.681416}
+    - _DisplacementXz: {r: 0.6499999, g: -2.920372, b: 1.66, a: -3.936305}
+    - _DistortParams: {r: 1.44, g: 0.2428571, b: 1.853064, a: -0.5314285}
+    - _Extinction: {r: 4.5, g: 75, b: 300, a: 1}
+    - _Foam: {r: 0.4266667, g: 0.4866667, b: 0, a: 0}
+    - _FoamWaveParams: {r: 0, g: 0.2491843, b: 3.339578, a: 1}
+    - _Fresnel_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _GAmplitude: {r: 0.14, g: 0.76, b: 0.175, a: 0.225}
+    - _GDirectionAB: {r: 0.4691436, g: 0.3540513, b: -0.2, a: 0.1}
+    - _GDirectionCD: {r: 0.7033888, g: -0.6799999, b: 0.7175735, a: -0.2}
+    - _GFrequency: {r: 0.5, g: 0.38, b: 0.59, a: 0.6}
+    - _GSpeed: {r: -3, g: 2, b: 1, a: 3}
+    - _GSteepness: {r: 7, g: 2, b: 6, a: 2}
+    - _HorizonColor: {r: 0.05290711, g: 0.2448674, b: 0.2835821, a: 1}
+    - _InvFadeParemeter: {r: 0.2189655, g: 0.1594483, b: 0.04310345, a: 0}
+    - _MainTex_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _ReflectionColor: {r: 0.5794164, g: 0.6849238, b: 0.7611941, a: 0.4313726}
+    - _ReflectionTex_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _ReflectiveColorCube_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _ReflectiveColor_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _RefrColor: {r: 0.5233905, g: 0.9477612, b: 0.9121496, a: 1}
+    - _RefrColorDepth: {r: 0.05006683, g: 0.2313433, b: 0.1704952, a: 1}
+    - _RefractionFog: {r: 0.5054348, g: 0.5054348, b: 0.5054348, a: 0.5}
+    - _RefractionTex_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ShorePerturbation: {r: 0, g: 0, b: 0, a: 0}
+    - _ShoreTiling: {r: 1, g: 1, b: 0.1, a: 0.1}
+    - _SpecularColor: {r: 0.9179105, g: 0.9179105, b: 0.9179105, a: 1}
+    - _UnderwaterColor: {r: 0.6950323, g: 0.8955224, b: 0.7502397, a: 1}
+    - _WaveOffset: {r: 1, g: 1, b: -0.01, a: -0.01}
+    - _WaveScale4: {r: 0.1, g: 0.1, b: 0.01, a: 0.01}
+    - _WorldLightDir: {r: -0.03037514, g: -0.2013908, b: -0.97904, a: 0}
+  m_BuildTextureStacks: []
