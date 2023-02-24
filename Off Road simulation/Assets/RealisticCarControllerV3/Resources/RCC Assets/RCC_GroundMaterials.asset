@@ -71,6 +71,17 @@ MonoBehaviour:
     skidmark: {fileID: 114759648095143906, guid: f9bbf9e575fb2714aa217acfd7d02f15,
       type: 3}
     deflate: 1
+  - groundMaterial: {fileID: 13400000, guid: cc6572a014f93e142aefc66fce937dd0, type: 2}
+    forwardStiffness: 1
+    sidewaysStiffness: 1
+    slip: 0.1
+    damp: 1
+    volume: 0.5
+    groundParticles: {fileID: 100000, guid: b1a582f5ef42a04449615e31d47a511a, type: 3}
+    groundSound: {fileID: 8300000, guid: 59e038dfc28ad83419aff1c81f974134, type: 3}
+    skidmark: {fileID: 114685594780989890, guid: d9297d0c600831349ab30b1c051467f3,
+      type: 3}
+    deflate: 0
   terrainFrictions:
   - groundMaterial: {fileID: 13400000, guid: 34d94011ab46ffe4c9347f4cbab45a9c, type: 2}
     splatmapIndexes:

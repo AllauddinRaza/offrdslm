@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CheckPoint
+  - unknown_20005
+  - FinishPoint
+  - Wood
+  - Wheel
+  - water
   layers:
   - Default
   - TransparentFX
