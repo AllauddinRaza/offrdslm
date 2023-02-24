@@ -24462,7 +24462,7 @@ MonoBehaviour:
   SteeringWheel: {fileID: 0}
   steeringWheelRotateAround: 0
   steeringWheelAngleMultiplier: 11
-  wheelTypeChoise: 1
+  wheelTypeChoise: 0
   externalController: 0
   steeringType: 0
   steerAngleCurve:
