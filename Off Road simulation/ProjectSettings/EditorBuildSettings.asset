@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GamePlay.unity
-    guid: c850ee8c3b14cc8459e7e186857cf567
+    path: Assets/Scenes/Consent.unity
+    guid: f03376776dac42e46bbc23c9e01b39c2
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 726e7cfeaa0f98046b87c2320a40785d
   - enabled: 1
     path: Assets/Scenes/LoadingScreen.unity
     guid: eea224c9441222343adab5166a2ddeb1
+  - enabled: 1
+    path: Assets/Scenes/GamePlay.unity
+    guid: c850ee8c3b14cc8459e7e186857cf567
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 5295c2f4e62fb084c83fe5d9aca71f41,
       type: 2}
