@@ -207,8 +207,8 @@ public class RCC_AICarController : MonoBehaviour {
                 float distanceToNextWaypoint = Vector3.Distance(transform.position, currentWaypoint.transform.position);
 
                 // Setting destination of the Navigator. 
-                if (!navigator.hasPath)
-                    navigator.SetDestination(waypointsContainer.waypoints[currentWaypointIndex].transform.position);
+                //if (!navigator.hasPath)
+                //    navigator.SetDestination(waypointsContainer.waypoints[currentWaypointIndex].transform.position);
 
                 if (distanceToNextWaypoint != 0 && distanceToNextWaypoint < nextWaypointPassDistance) {
 

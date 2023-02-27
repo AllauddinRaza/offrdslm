@@ -10,6 +10,7 @@ TagManager:
   - Wood
   - Wheel
   - water
+  - cube
   layers:
   - Default
   - TransparentFX
