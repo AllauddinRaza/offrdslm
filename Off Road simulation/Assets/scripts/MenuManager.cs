@@ -45,4 +45,12 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("LoadingScreen");
     }
+    public void openIAPEverything()
+    {
+        iapmainmenu.Instance.OpenMenu("iapeverything");
+    } 
+    public void openIAPShop()
+    {
+       OpenMenu("shop");
+    }
 }

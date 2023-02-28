@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class LevelSelection : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class LevelSelection : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+  public void load_TruckScene()
+    {
+        SceneManager.LoadScene("TruckSelection");
+    }
    
 }
