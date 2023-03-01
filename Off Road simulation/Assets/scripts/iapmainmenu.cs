@@ -6,19 +6,19 @@ public class iapmainmenu : MonoBehaviour
 {
     public static iapmainmenu Instance;
     [SerializeField] Menu[] menus;
-    public void Awake()
+   private void Start()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
-           
+          
         }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-
+        //else
+        //{
+        //    Destroy(this.gameObject);
+        //}
+        StartCoroutine(Iap_Show());
     }
     public void OpenMenu(string menuName)
     {
@@ -50,10 +50,7 @@ public class iapmainmenu : MonoBehaviour
         menu.Close();
     }
 
-    private void Start()
-    {
-        StartCoroutine(Iap_Show());
-    }
+  
     IEnumerator Iap_Show()
     {
         yield return new WaitForSeconds(5f);

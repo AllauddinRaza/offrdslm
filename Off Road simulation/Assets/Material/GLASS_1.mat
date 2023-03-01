@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Cube:
-        m_Texture: {fileID: 8900000, guid: b615fddca1445d046b13eccee9d5b767, type: 3}
+        m_Texture: {fileID: 8900000, guid: c769e8bdb5da4704880597fc1ae8486d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 54f3d4a5cdb363d43b126eebd67f4e20, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -50,7 +50,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.03676468, g: 0.03676468, b: 0.03676468, a: 1}
+    - _Color: {r: 0.3490566, g: 0.3210662, b: 0.3210662, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _ReflectColor: {r: 0.1102941, g: 0.1102941, b: 0.1102941, a: 0.5019608}
     - _RimColor: {r: 0, g: 0.23235299, b: 0.42647058, a: 0}

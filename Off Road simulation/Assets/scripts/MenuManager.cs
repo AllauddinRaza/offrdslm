@@ -52,5 +52,9 @@ public class MenuManager : MonoBehaviour
     public void openIAPShop()
     {
        OpenMenu("shop");
+    }  
+    public void Exit_app()
+    {
+        Application.Quit();
     }
 }
