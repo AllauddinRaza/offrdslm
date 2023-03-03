@@ -2839,7 +2839,7 @@ MonoBehaviour:
   drawSkid: 1
   wheelPosition: {x: 0, y: 0, z: 0}
   wheelRotation: {x: 0, y: 0, z: 0, w: 1}
-  canPower: 0
+  canPower: 1
   powerMultiplier: 1
   canSteer: 1
   steeringMultiplier: 1
@@ -14229,9 +14229,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 5a0d6a158c9d5fc4da9b0375290422ca, type: 2}
   - {fileID: 2100000, guid: ba9f19be86d7435478a576545908d4b6, type: 2}
-  - {fileID: 2100000, guid: 1c5547abf4b3dfc489dbfee918b97bdd, type: 2}
+  - {fileID: 2100000, guid: 9e6666860679e3a46965fc2717ce5f93, type: 2}
   - {fileID: 2100000, guid: 52883293d27b9ac408c28fdecad50793, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -17772,7 +17772,7 @@ MonoBehaviour:
   drawSkid: 1
   wheelPosition: {x: 0, y: 0, z: 0}
   wheelRotation: {x: 0, y: 0, z: 0, w: 1}
-  canPower: 0
+  canPower: 1
   powerMultiplier: 1
   canSteer: 1
   steeringMultiplier: 1
@@ -28422,7 +28422,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1500
   m_Drag: 0.01
-  m_AngularDrag: 0.5
+  m_AngularDrag: 0.2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -28464,7 +28464,7 @@ MonoBehaviour:
   SteeringWheel: {fileID: 0}
   steeringWheelRotateAround: 0
   steeringWheelAngleMultiplier: 11
-  wheelTypeChoise: 1
+  wheelTypeChoise: 2
   externalController: 0
   steeringType: 0
   steerAngleCurve:
@@ -28510,33 +28510,33 @@ MonoBehaviour:
   brakeTorque: 2000
   downForce: 25
   speed: 0
-  maxspeed: 240
+  maxspeed: 120
   engineTorqueCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 1000
-      value: 150
-      inSlope: 0.033333335
-      outSlope: 0.033333335
+      value: 250
+      inSlope: 0.055555556
+      outSlope: 0.055555556
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 5500
-      value: 300
-      inSlope: -0.016666668
-      outSlope: -0.016666668
+      value: 500
+      inSlope: -0.027777774
+      outSlope: -0.027777774
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 7000
-      value: 200
-      inSlope: -0.06666667
-      outSlope: -0.06666667
+      value: 333.33334
+      inSlope: -0.111111104
+      outSlope: -0.111111104
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -28545,14 +28545,14 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   autoGenerateEngineRPMCurve: 1
-  maxEngineTorque: 300
+  maxEngineTorque: 500
   maxEngineTorqueAtRPM: 5500
   minEngineRPM: 1000
   maxEngineRPM: 7000
   engineRPM: 0
   engineRPMRaw: 0
   engineInertia: 0.15
-  useRevLimiter: 1
+  useRevLimiter: 0
   useExhaustFlame: 1
   engineRunning: 0
   useSteeringLimiter: 1
@@ -28581,7 +28581,7 @@ MonoBehaviour:
   - maxRatio: 1
     maxSpeed: 240
     targetSpeedForNextGear: 180
-  totalGears: 3
+  totalGears: 5
   currentGear: 0
   NGear: 0
   finalRatio: 3.23
@@ -28708,8 +28708,8 @@ MonoBehaviour:
   overSteering: 0
   turboBoost: 0
   NoS: 100
-  useNOS: 0
-  useTurbo: 0
+  useNOS: 1
+  useTurbo: 1
   attachedTrailer: {fileID: 0}
 --- !u!1 &3014757013592711017
 GameObject:

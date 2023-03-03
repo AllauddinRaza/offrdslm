@@ -15,7 +15,7 @@ public class gamemanager : MonoBehaviour
     {
         _Player[CarSelection.selectedIndex].SetActive(true);
         //_Player[CarSelection.selectedIndex].GetComponent<RCC_AICarController>().enabled = false;
-        Instantiate(_Player[CarSelection.selectedIndex+1],_spwanpoints[CarSelection.selectedIndex].transform.position, _spwanpoints[CarSelection.selectedIndex].transform.rotation);
+        Instantiate(_Player[CarSelection.selectedIndex],_spwanpoints[CarSelection.selectedIndex].transform.position, _spwanpoints[CarSelection.selectedIndex].transform.rotation);
 
     }
 
