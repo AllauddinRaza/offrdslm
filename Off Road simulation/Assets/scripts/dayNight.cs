@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class dayNight : MonoBehaviour
 {
+    public Material[] _skybox;
     public Text Coins;
+    public static Material _sky;
     private void Awake()
     {
         PlayerPrefs.SetInt("day/night", 1);
@@ -18,11 +20,15 @@ public class dayNight : MonoBehaviour
     {
         PlayerPrefs.SetInt("day/night", 1);
         MenuManager.Instance.OpenMenu("LevelSelection");
+        RenderSettings.skybox = _skybox[0];
+        _sky = RenderSettings.skybox;
     }
     public void night()
     {
         PlayerPrefs.SetInt("Weather", 2);
         MenuManager.Instance.OpenMenu("LevelSelection");
+        RenderSettings.skybox = _skybox[1];
+        _sky = RenderSettings.skybox;
     }
   
     public void selectedBTN()

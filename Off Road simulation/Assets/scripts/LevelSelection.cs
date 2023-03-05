@@ -28,8 +28,9 @@ public class LevelSelection : MonoBehaviour
         Coins.text = PlayerPrefs.GetInt("Coins").ToString();
     }
 
-  public void load_TruckScene()
+  public void load_TruckScene(int select)
     {
+        PlayerPrefs.SetInt("loadlevel",select);
         SceneManager.LoadScene("TruckSelection");
     }
    

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class CarSelection : MonoBehaviour
 {
+   
     public Slider _speed, _break, _suspention;
     public Text Coins;
     public GameObject _lockImage,_selected,_buyBTN;
@@ -16,7 +17,8 @@ public class CarSelection : MonoBehaviour
     public static int selectedIndex = 0;
     private void Awake()
     {
-       
+        PlayerPrefs.SetInt("Coins",10000);
+        RenderSettings.skybox = dayNight._sky;
     }
     void Start()
     {

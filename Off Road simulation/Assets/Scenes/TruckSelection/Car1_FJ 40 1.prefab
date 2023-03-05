@@ -14180,7 +14180,7 @@ GameObject:
   - component: {fileID: 7646861164910539684}
   m_Layer: 8
   m_Name: FJ 40 Model
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

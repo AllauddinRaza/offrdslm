@@ -28384,7 +28384,7 @@ GameObject:
   - component: {fileID: 797630728560099629}
   m_Layer: 8
   m_Name: Car1_FJ 40
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28553,7 +28553,7 @@ MonoBehaviour:
   engineRPM: 0
   engineRPMRaw: 0
   engineInertia: 0.15
-  useRevLimiter: 1
+  useRevLimiter: 0
   useExhaustFlame: 1
   engineRunning: 0
   useSteeringLimiter: 1

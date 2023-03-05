@@ -21174,7 +21174,7 @@ GameObject:
   - component: {fileID: 3925488904611831895}
   m_Layer: 8
   m_Name: Bison model
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23184,7 +23184,7 @@ MonoBehaviour:
   engineRPM: 0
   engineRPMRaw: 0
   engineInertia: 0.15
-  useRevLimiter: 1
+  useRevLimiter: 0
   useExhaustFlame: 1
   engineRunning: 0
   useSteeringLimiter: 1
