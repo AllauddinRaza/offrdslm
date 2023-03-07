@@ -16,7 +16,9 @@ public class levelcomplete : MonoBehaviour
     }
     public void Next()
     {
+        PlayerPrefs.SetInt("loadlevel", PlayerPrefs.GetInt("loadlevel")+1);
         SceneManager.LoadScene("GamePlay");
+      
         this.gameObject.SetActive(false);
     }
 }

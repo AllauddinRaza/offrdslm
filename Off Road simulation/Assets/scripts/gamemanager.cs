@@ -45,25 +45,25 @@ public class gamemanager : MonoBehaviour
             case 3:
                 _enviromentReward.SetActive(true);
                 _Player[CarSelection.selectedIndex].SetActive(true);
-                Instantiate(_Player[CarSelection.selectedIndex], SpwanReward.transform.position, SpwanReward.transform.rotation);
+                _Player[CarSelection.selectedIndex] =  Instantiate(_Player[CarSelection.selectedIndex], SpwanReward.transform.position, SpwanReward.transform.rotation);
                 break;
             case 2:
                 _enviroSnow.SetActive(true);
                 _levelsSnow[PlayerPrefs.GetInt("loadlevel")].SetActive(true);
                 _Player[CarSelection.selectedIndex].SetActive(true);
-                Instantiate(_Player[CarSelection.selectedIndex], SpwanSnow[PlayerPrefs.GetInt("loadlevel")].transform.position, SpwanSnow[PlayerPrefs.GetInt("loadlevel")].transform.rotation);
+                _Player[CarSelection.selectedIndex] = Instantiate(_Player[CarSelection.selectedIndex], SpwanSnow[PlayerPrefs.GetInt("loadlevel")].transform.position, SpwanSnow[PlayerPrefs.GetInt("loadlevel")].transform.rotation);
                 break;
             case 1:
                 _enviroSA.SetActive(true);
                 _levelsSA[PlayerPrefs.GetInt("loadlevel")].SetActive(true);
                 _Player[CarSelection.selectedIndex].SetActive(true);
-                Instantiate(_Player[CarSelection.selectedIndex], SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.position, SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.rotation);
+                _Player[CarSelection.selectedIndex] = Instantiate(_Player[CarSelection.selectedIndex], SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.position, SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.rotation);
                 break;
             default:
                 _enviroSA.SetActive(true);
                 _levelsSA[PlayerPrefs.GetInt("loadlevel")].SetActive(true);
                 _Player[CarSelection.selectedIndex].SetActive(true);
-                Instantiate(_Player[CarSelection.selectedIndex], SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.position, SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.rotation);
+                _Player[CarSelection.selectedIndex] = Instantiate(_Player[CarSelection.selectedIndex], SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.position, SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.rotation);
                 break;
         }
      
@@ -86,6 +86,11 @@ public class gamemanager : MonoBehaviour
     public void PauseGame()
     {
         _pause.SetActive(true);
+    }   
+    public void Respwan()
+    {
+        _Player[CarSelection.selectedIndex].transform.position = SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.position ;
+        Debug.Log("respawn");
     }
 
     IEnumerator Levecomp()

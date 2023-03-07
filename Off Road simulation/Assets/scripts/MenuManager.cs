@@ -8,10 +8,17 @@ public class MenuManager : MonoBehaviour
     public enum _pannels { Loading,MainMenu,GamePlay };
     public static MenuManager Instance;
     [SerializeField] Menu[] menus;
+    [Header("Screen")]
+    public static bool screen;
     public void Awake()
     {
         Instance = this;
     }
+    private void Start()
+    {
+        screen = false;
+    }
+
     public void OpenMenu(string menuName)
     {
         for (int i = 0; i < menus.Length; i++)

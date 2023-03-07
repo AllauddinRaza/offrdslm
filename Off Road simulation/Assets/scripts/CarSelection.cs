@@ -27,7 +27,7 @@ public class CarSelection : MonoBehaviour
         Lock_check();
         Coins.text = PlayerPrefs.GetInt("Coins").ToString();
         _vehiclespriceText.text = _vehiclesPrice[selectedIndex].ToString();
-        
+       
 
     }
 
@@ -124,7 +124,7 @@ public class CarSelection : MonoBehaviour
     public void Gameplayload()
     {
      
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("LoadingScreen");
        
     }
 }

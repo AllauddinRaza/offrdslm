@@ -31,7 +31,7 @@ public class LevelSelection : MonoBehaviour
   public void load_TruckScene(int select)
     {
         PlayerPrefs.SetInt("loadlevel",select);
-        SceneManager.LoadScene("TruckSelection");
+        SceneManager.LoadScene("LoadingScreen"); 
     }
    
 }

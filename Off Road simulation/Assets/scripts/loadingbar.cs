@@ -26,7 +26,16 @@ public class loadingbar : MonoBehaviour {
         }
         else
         {
-            SceneManager.LoadScene("MainMenu");
+            if (MenuManager.screen == false)
+            {
+                SceneManager.LoadScene("TruckSelection");
+                MenuManager.screen = true;
+            }
+            else
+            {
+                SceneManager.LoadScene("GamePlay");
+                MenuManager.screen = false;
+            }
 
         }
     }

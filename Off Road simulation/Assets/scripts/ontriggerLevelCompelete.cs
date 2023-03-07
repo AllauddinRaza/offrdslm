@@ -10,6 +10,7 @@ public class ontriggerLevelCompelete : MonoBehaviour
         if (other.tag == "Player") { gamemanager.Gm.LevelCompelet();
 
             _confati.SetActive(true);
+            PlayerPrefs.SetInt("CompletedLevels", PlayerPrefs.GetInt("CompletedLevels") + 1);
         }
     }
 }
