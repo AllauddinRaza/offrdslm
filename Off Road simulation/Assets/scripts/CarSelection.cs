@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CarSelection : MonoBehaviour
-{
-   
+{[Header("truckselectionEnviroment")]
+    public GameObject _envtruckselection;
+    [Header("Specification")]
     public Slider _speed, _break, _suspention;
     public Text Coins;
+    [Header("lock/selection")]
     public GameObject _lockImage,_selected,_buyBTN;
+    [Header("vehicles")]
     public GameObject[] _vehicles;
     public int[] _vehiclesPrice;
     public Text _vehiclespriceText;
@@ -17,6 +20,7 @@ public class CarSelection : MonoBehaviour
     public static int selectedIndex = 0;
     private void Awake()
     {
+        _envtruckselection.SetActive(true);
         PlayerPrefs.SetInt("Coins",10000);
         RenderSettings.skybox = dayNight._sky;
     }
