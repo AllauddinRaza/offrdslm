@@ -7,18 +7,20 @@ public class weatherselection : MonoBehaviour
 {
     public Text Coins;
     public GameObject _lockImage;
-    private void Start()
+    public void Start()
     {
+        
+            _lockImage.SetActive(false);
+           
+        
         Coins.text = PlayerPrefs.GetInt("Coins").ToString();
     }
     public void winter()
     {
-        if (PlayerPrefs.GetInt("CompletedLevels") > 12)
-        {
-            _lockImage.SetActive(false);
+        
             PlayerPrefs.SetInt("Env", 2);
             MenuManager.Instance.OpenMenu("Day/night");
-        }
+        
     }
     public void atumun()
     {

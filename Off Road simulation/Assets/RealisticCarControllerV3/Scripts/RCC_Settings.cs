@@ -33,6 +33,8 @@ public class RCC_Settings : ScriptableObject {
         }
     }
 
+    public static object ControllerType { get; internal set; }
+
     public bool overrideBehavior = true;
     public bool overrideFPS = true;
     public bool overrideFixedTimeStep = true;

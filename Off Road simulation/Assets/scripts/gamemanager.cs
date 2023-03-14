@@ -18,8 +18,8 @@ public class gamemanager : MonoBehaviour
     public GameObject SpwanReward; 
     [Header("GamePanels")]
     public GameObject _compelete,_failed,_pause;
-    [Header("fordragforce")]
-    private float dd;
+    //[Header("vector3for position")]
+    //private Vector3 _respwanPosition;
     public void Awake()
     {
         Time.timeScale = 1f;
@@ -89,7 +89,9 @@ public class gamemanager : MonoBehaviour
     }   
     public void Respwan()
     {
-        _Player[CarSelection.selectedIndex].transform.position = SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.position ;
+        _Player[CarSelection.selectedIndex].transform.rotation = SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.rotation;
+        _Player[CarSelection.selectedIndex].transform.position = SpwanSA[PlayerPrefs.GetInt("loadlevel")].transform.position;
+        
         Debug.Log("respawn");
     }
 

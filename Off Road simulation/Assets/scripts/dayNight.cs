@@ -19,7 +19,15 @@ public class dayNight : MonoBehaviour
     public void day()
     {
         PlayerPrefs.SetInt("day/night", 1);
-        MenuManager.Instance.OpenMenu("LevelSelection");
+        if (PlayerPrefs.GetInt("Env")== 1)
+        {
+            MenuManager.Instance.OpenMenu("LevelSelectionWinter");
+        }
+        else
+        {
+            MenuManager.Instance.OpenMenu("LevelSelection");
+        }
+       
         RenderSettings.skybox = _skybox[0];
         _sky = RenderSettings.skybox;
     }

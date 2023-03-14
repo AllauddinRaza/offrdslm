@@ -311,7 +311,7 @@ MonoBehaviour:
   foldGeneralSettings: 1
   foldBehaviorSettings: 1
   foldControllerSettings: 1
-  foldUISettings: 1
+  foldUISettings: 0
   foldWheelPhysics: 1
   foldSFX: 1
   foldOptimization: 1

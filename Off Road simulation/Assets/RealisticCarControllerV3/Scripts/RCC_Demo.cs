@@ -101,12 +101,12 @@ public class RCC_Demo : MonoBehaviour {
 
 			}
 
-			if(BCG_EnterExitManager.Instance.activePlayer && lastEnterExitVehicle && lastEnterExitVehicle.driver == null){
+			//if(BCG_EnterExitManager.Instance.activePlayer && lastEnterExitVehicle && lastEnterExitVehicle.driver == null){
 				
-				BCG_EnterExitManager.Instance.waitTime = 10f;
-				BCG_EnterExitManager.Instance.activePlayer.GetIn(lastEnterExitVehicle);
+			//	BCG_EnterExitManager.Instance.waitTime = 10f;
+			//	BCG_EnterExitManager.Instance.activePlayer.GetIn(lastEnterExitVehicle);
 
-			}
+			//}
 
 		}
 		

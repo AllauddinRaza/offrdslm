@@ -14,8 +14,9 @@ public class LevelSelection : MonoBehaviour
   private  void Start()
     {
             PlayerPrefs.SetInt("SelectedLevels", PlayerPrefs.GetInt("CompletedLevels"));
-        
-      
+        PlayerPrefs.SetInt("CompletedLevels", 3); 
+
+
         for (int i = 1; i < 15; i++)
         {
             _level[PlayerPrefs.GetInt("SelectedLevels")+i].transform.GetComponent<Button>().interactable = false;
